@@ -12,8 +12,8 @@ set_include_path(dirname(__FILE__) . PATH_SEPARATOR . get_include_path());
 
 require_once('Zend/Loader/Autoloader.php');
 $autoloader =
-	Zend_Loader_Autoloader::getInstance()
-		->unregisterNamespace(array('Zend_', 'ZendX_'))
+    Zend_Loader_Autoloader::getInstance()
+        ->unregisterNamespace(array('Zend_', 'ZendX_'))
         ->setFallbackAutoloader(true);
 
 Lfm_Controller::run();
