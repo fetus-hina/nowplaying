@@ -7,37 +7,37 @@
  * @link        https://github.com/fetus-hina/nowplaying
  */
 class Lfm_Uuid {
-    const NIL_UUID			= '00000000-0000-0000-0000-000000000000';
-    const NAMESPACE_DNS 	= '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
-    const NAMESPACE_URL		= '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
-    const NAMESPACE_OID		= '6ba7b812-9dad-11d1-80b4-00c04fd430c8';
-    const NAMESPACE_X500	= '6ba7b814-9dad-11d1-80b4-00c04fd430c8';
+    const NIL_UUID          = '00000000-0000-0000-0000-000000000000';
+    const NAMESPACE_DNS     = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
+    const NAMESPACE_URL     = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
+    const NAMESPACE_OID     = '6ba7b812-9dad-11d1-80b4-00c04fd430c8';
+    const NAMESPACE_X500    = '6ba7b814-9dad-11d1-80b4-00c04fd430c8';
 
-    const VERSION_NIL	= 0x0;
-    const VERSION_1		= 0x1;
-    const VERSION_2		= 0x2;
-    const VERSION_3		= 0x3;
-    const VERSION_4		= 0x4;
-    const VERSION_5 	= 0x5;
+    const VERSION_NIL   = 0x0;
+    const VERSION_1     = 0x1;
+    const VERSION_2     = 0x2;
+    const VERSION_3     = 0x3;
+    const VERSION_4     = 0x4;
+    const VERSION_5     = 0x5;
 
-    const FORMAT_LOWER	= 'lower';
-    const FORMAT_UPPER	= 'upper';
+    const FORMAT_LOWER  = 'lower';
+    const FORMAT_UPPER  = 'upper';
 
     protected
-        $binary			= null,
-        $format_case	= self::FORMAT_LOWER,
-        $format_bracket	= false,
-        $gettable_keys	= array('time_low', 'time_mid', 'time_high',
+        $binary         = null,
+        $format_case    = self::FORMAT_LOWER,
+        $format_bracket = false,
+        $gettable_keys  = array('time_low', 'time_mid', 'time_high',
                                 'version', 'clock_seq', 'node',
                                 'time_high_and_version',
                                 'clock_seq_high_and_reserved',
                                 'clock_seq_high', 'clock_seq_low'),
-        $magic_keys		= array('rfc_format', 'microsoft_format',
+        $magic_keys     = array('rfc_format', 'microsoft_format',
                                 'lower_case', 'upper_case',
                                 'with_bracket', 'without_bracket',
                                 'generate', 'generate_v4'),
-        $magic_keys2	= array('lower'	=> 'lower_case',
-                                'upper'	=> 'upper_case');
+        $magic_keys2    = array('lower' => 'lower_case',
+                                'upper' => 'upper_case');
 
     static public function factory($uuid = false) {
         $obj = new self();
