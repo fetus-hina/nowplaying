@@ -1,0 +1,19 @@
+; Author        HiNa <hina@bouhime.com>
+; Copyright     Copyright (C) 2011 by HiNa <hina@bouhime.com>. All rights reserved.
+; License       2-cause BSD License(Simplified BSD License)
+;                   https://github.com/fetus-hina/nowplaying/blob/master/LICENSE
+; GitHub        https://github.com/fetus-hina/nowplaying
+
+[lastfm]
+user_name       = "asdf"
+interval        = 1800
+
+[twitter]
+consumer.key    = "*********************"
+consumer.secret = "***************************************"
+access.token    = "**************************************************"
+access.secret   = "****************************************"
+
+[bitly]
+login           = "asdf"
+apikey          = "**********************************"

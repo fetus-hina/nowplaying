@@ -1,0 +1,6 @@
+Required
+    * PHP 5.3
+    * PHP-mbstring
+    * PHP-PDO
+    * SQLite
+    * Zend Framework
